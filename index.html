@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="bootstrap/js/bootstrap-modal.js" rel="stylesheet" media="screen">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <title>Traveling Blog</title>
+    </head>
+    <body>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"></li>
+              <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/nature.jpg" class="d-block w-100" height=625 alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Nature is my favorite place</h5>
+                  <p>"In nature, nothing is perfect and everything is perfect. Trees can be contorted, bent in weird ways, and they’re still beautiful."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/map.jpeg" class="d-block w-100" height=625 alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Go on an adventure</h5>
+                  <p>"Do not dare to not dare."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/lake.jpeg" class="d-block w-100" height=625 alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Take a boat and go on a lake</h5>
+                  <p>"Wherever you go, go with all your heart."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/canyon.jpg" class="d-block w-100" height=625 alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Canyon drives never stop making me feel happy</h5>
+                  <p>"Leave the road, take the trails."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/sunset.jpg" class="d-block w-100" height=625 alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Sunsets</h5>
+                  <p>"Every sunset brings the promise of a new dawn."</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Traveling</h5>
+                  <p class="card-text">Find places to travel</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">#1 Place I wanna travel: </h5>
+                    <p class="card-text">Click button to see</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Dream place
+                      </button>
+                      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">#1 Traveling Dream</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              Italy!
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Campsites</h5>
+                  <p class="card-text">Find the campsites near you</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
